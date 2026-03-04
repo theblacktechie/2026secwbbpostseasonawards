@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+const { useState, useRef } = React;
 
 const LEGEND = [
   { letter: "A", abbr: "ALA", school: "Alabama",       color: "#9E1B32" },
@@ -232,7 +232,7 @@ function FlipCard({ award, onClose }) {
   );
 }
 
-export default function SecScantron() {
+function SecScantron() {
   const [activeQ, setActiveQ] = useState(null);
   const [glowing, setGlowing] = useState(null);
   const [showKey, setShowKey] = useState(false);
@@ -411,3 +411,7 @@ export default function SecScantron() {
     </div>
   );
 }
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<SecScantron />);

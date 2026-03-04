@@ -350,7 +350,7 @@ function SecScantron() {
           );
         })}
 
-        <div style={{ borderTop: "1px dashed #ccc9c0", padding: "10px 18px 12px", background: "#ede9e1" }}>
+        <div style={{ borderTop: "1px dashed #ccc9c0", padding: "10px 18px 12px", background: "#ffffff" }}>
           <button onClick={() => setShowKey(k => !k)} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: "6px", padding: 0 }}>
             <span style={{ fontFamily: BC, fontWeight: 600, fontSize: "8.5px", letterSpacing: ".16em", textTransform: "uppercase", color: "#1a1a1a" }}>Answer Key</span>
             <span style={{ fontFamily: BC, fontSize: "8px", color: "#555", display: "inline-block", transform: showKey ? "rotate(90deg)" : "rotate(0deg)", transition: "transform .2s" }}>▶</span>

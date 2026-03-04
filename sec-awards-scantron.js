@@ -247,7 +247,7 @@ function SecScantron() {
   }
 
   return (
-    <div style={{ minHeight: "100vh", background: "#dedad2", display: "flex", alignItems: "flex-start", justifyContent: "center", padding: "40px 16px 80px" }}>
+    <div style={{ minHeight: "100vh", background: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "16px" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap');
         @keyframes rect-pulse {
@@ -261,7 +261,7 @@ function SecScantron() {
         .rect-filled:hover { filter: brightness(1.18); transform: scale(1.08); }
       `}</style>
 
-      <div style={{ background: "#f5f2eb", borderRadius: "3px", boxShadow: "0 2px 8px rgba(0,0,0,0.18), 0 16px 56px rgba(0,0,0,0.15)", width: "100%", maxWidth: "470px", overflow: "hidden" }}>
+      <div style={{ background: "#f5f2eb", borderRadius: "3px", boxShadow: "0 2px 8px rgba(0,0,0,0.18), 0 16px 56px rgba(0,0,0,0.15)", width: "100%", maxWidth: "520px", overflow: "hidden" }}>
 
         {/* HEADER */}
         <div style={{ background: "#003087", padding: "12px 18px 10px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px" }}>
@@ -411,7 +411,6 @@ function SecScantron() {
     </div>
   );
 }
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<SecScantron />);
